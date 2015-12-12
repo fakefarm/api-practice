@@ -1,0 +1,104 @@
+# API DEPLOY
+
+noraml api, vanilla deploy look like?
+
+## heroku 12 factor concept
+
+By default app should be configured for a one command development
+
+Used in dev more than production
+
+Dev is the default
+
+In prod you have full control over everything - speifying everything you can.
+
+Dev i just want to work.
+
+To change a config - you use env variables so that code is only ever README
+
+
+## do _that_ from the beginning
+
+homework - research 12 factor concepts
+
+reasonable configuration in mind to be built and setup in one step.
+
+
+## MC
+
+- well for thsees guys you should
+thing.yaml and thing.rb
+
+sometimes don't need initializer b/c it reads from a config.
+
+## Stripe
+
+### Beginning - before building features. / Discovery
+
+1. what they have?
+- api
+- gem
+
+2. dev account sandbox?
+- play and learn
+
+3. exp branch
+- small, goals like - connect
+- make a request
+- just learn what are some pitfalls, good parts to factor into our use.
+
+4. encapsulate the api in such a way that next month if stripe goes out of business or we switch to braintree
+so that who we're talking to is a configuration detail. (high level philosophy about interacting). but you really need the business requirements before you need to know.
+
+is there a design pattern to follow?
+- how you design the interaction b/n your code and their code
+
+ex.
+
+po - 'charge the customer'
+    that step of the code should go through some 'common interface'
+
+    PaymentsGateway(who, cost)
+    - under the hood is talks to stripe, bc we're not hardcoding stripe into solution. (avoiding vendor lock in)
+
+
+classs People, Products, Services (charge something)
+
+People.charge
+
+Payments.charge(@person, 25.00, US_Dollars)
+Payments.charge(@person, 0.25, Bitcoins)
+
+Payments.charge(@person, 0.25, Bitcoins) # => Payments::Response ( details about payment )
+
+class Payments
+
+def self.chage(*args)
+  # doesn't have to happen immediately - could put a queue in payments. log the fail and reply them later. (exmple stripe has an outage - doens't bother your orders or users)
+  Whatever.new(object).charge(value, currency)
+end
+
+class Payments.rb
+class PaymentResponse.rb
+
+PG(@person).charge
+PG(@product).charge
+
+## Part 2 implementation
+- 1. a note about business requirements (over communicate to make sure not any potential for screw up.) - you must have them in order to know what assumptions
+- 2. aspire to encapsulate / oop
+  - 2b fault tolerant (system design)
+
+
+
+part of being a sr. developer to build a system to move and evolve over time.
+
+Books
+Design Patterns - GOF
+
+---------------
+# how to communicate with a developer
+- due date
+- manager
+- ticket
+-
