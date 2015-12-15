@@ -1,3 +1,41 @@
+# Notes with @mikegehard
+
+
+## links
+lostisland/faraday
+https://github.com/lostisland/faraday
+
+stripe/stripe-ruby
+https://github.com/stripe/stripe-ruby
+
+Stripe API Reference
+https://stripe.com/docs/api#intro
+
+Martin Fowler on ORM Hate - DZone Database
+https://dzone.com/articles/martin-fowler-orm-hate
+
+P of EAA: Repository
+http://martinfowler.com/eaaCatalog/repository.html
+
+Layouts and Rendering in Rails — Ruby on Rails Guides
+http://guides.rubyonrails.org/layouts_and_rendering.html
+
+patterns of enterprise application architecture - Google Search
+https://www.google.com/search?sourceid=chrome-psyapi2&ion=1&espv=2&es_th=1&ie=UTF-8&q=patterns%20of%20enterprise%20application%20architecture&oq=patterns%20of%20e&aqs=chrome.0.0l3j69i57j0l2.2135j0j1
+
+Catalog of Patterns of Enterprise Application Architecture
+http://martinfowler.com/eaaCatalog/
+
+P of EAA: Active Record
+http://martinfowler.com/eaaCatalog/activeRecord.html
+
+martin fowler object to relational mapping - Google Search
+https://www.google.com/search?q=martin+fowler+object+to+relational+mapping&espv=2&source=lnt&tbs=qdr:y&sa=X&ved=0ahUKEwiH5vjV5NbJAhVMy2MKHbIoDEUQpwUIFQ&biw=2327&bih=575
+
+Configuring Rails Applications — Ruby on Rails Guides
+http://guides.rubyonrails.org/configuring.html
+
+
 # API DEPLOY
 
 noraml api, vanilla deploy look like?
