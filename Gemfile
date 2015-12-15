@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'pry'
+gem 'stripe'
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
